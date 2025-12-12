@@ -1,0 +1,107 @@
+/* vendorpenawaran.css */
+.menu {
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 25px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative; /* Agar posisi absolute pagination bekerja dengan baik */
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table thead th {
+    background-color: #002855;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr.highlight {
+    background-color: #fff3cd;
+}
+
+.table td {
+    padding: 10px;
+    justify-content: center;
+}
+
+.table td a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.table td a.download {
+    background-color: #002855;
+    color: white;
+}
+
+.table td a.download:hover {
+    background-color: #23313f;
+}
+
+.table td a.view {
+    background-color: #FFC300;
+    color: rgb(11, 11, 11);
+}
+
+.table td a.view:hover {
+    background-color: #CC9C00;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pagination .prev-btn,
+.pagination .next-btn {
+    padding: 10px 20px;
+    background-color: #002855;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .prev-btn:hover,
+.pagination .next-btn:hover {
+    background-color: #001d3d;
+}
+
+.pagination span {
+    font-size: 16px;
+}

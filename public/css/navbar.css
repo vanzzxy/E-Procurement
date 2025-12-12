@@ -1,0 +1,197 @@
+/* Pengaturan BODY Mulai */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Pengaturan BODY Selesai */
+
+
+/* Pengaturan NAVBAR Mulai */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 30px 30px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 0 20px;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-menu ul li .link:hover {
+    color: #f48c06;
+    border-bottom: 2px solid #f48c06;
+}
+
+.nav-button .btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFC300;
+    font-weight: 500;
+    border: 1px solid #FFC300; /* Border hitam */
+}
+
+.nav-button .btn:hover {
+    background-color: #FFC300; /* Latar belakang sedikit lebih gelap saat hover */
+    color: #ffffff; /* Teks tetap hitam */
+    border-color: #FFC300; /* Border tetap hitam */
+}
+
+#registerBtn {
+    margin-left: 5px;
+}
+
+.btn.white-btn {
+    background-color: #001D3D; /* Latar belakang putih */
+    color: #ffffff; /* Teks hitam */
+    border: 1px solid #001D3D; /* Border hitam */}
+
+.btn.white-btn:hover {
+    background-color: #fff; /* Latar belakang putih */
+    color: #000; /* Teks hitam */
+    border: 1px solid #001D3D; /* Border hitam */
+}
+
+.nav-menu-btn {
+    display: none;
+}
+/* Pengaturan NAVBAR Selesai */
+
+
+/* Pengaturan FOOTER Mulai */
+.footer {
+    background: #001D3D;
+    color: #FFC300;
+    padding: 20px;
+    border-radius: 60px 60px 0 0 ;
+    text-align: left; /* Ubah menjadi kiri */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Tambahkan gap untuk jarak antar kolom */
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #FFC300;
+    white-space: nowrap; /* Menjaga teks tetap dalam satu baris */
+}
+
+.footer-column address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Menjaga teks tetap dalam satu baris */
+}
+
+.footer-contact i {
+    margin-right: 8px;
+    color: #FFC300;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-links,
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.social-media li {
+    margin-bottom: 10px;
+    display: inline-block; /* Tampilkan logo sosial media dalam satu baris */
+}
+
+.social-media a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+}
+
+.social-media a:hover {
+    color: #ffcf33;
+}
+
+/* Tambahkan margin kiri untuk menggeser kolom Sosial Media */
+.social-media-column {
+    margin-left: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .social-media li {
+        display: inline-block; /* Tetap dalam satu baris di layar kecil */
+    }
+}
+/* Pengaturan FOOTER Selesai */
+
+

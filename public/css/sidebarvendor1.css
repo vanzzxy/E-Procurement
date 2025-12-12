@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk main-container */
+.main-container {
+    margin-left: 220px; /* Menyediakan ruang untuk sidebar */
+    width: 100%;
+    transition: margin-left 0.3s ease; /* Transisi untuk konten utama saat sidebar berubah */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Tambahkan scroll vertikal jika konten lebih tinggi dari viewport */
+    width: 100%; /* Lebar default main-container saat sidebar terbuka */
+}
+
+/* CSS untuk header */
+.header {
+    padding: 10px;
+    background-color: #ffffff; /* Warna latar belakang header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Tambahkan scroll vertikal jika konten lebih tinggi dari viewport */
+    transition: margin-left 0.3s ease; /* Transisi untuk konten utama saat sidebar berubah */
+    width: 100%; /* Lebar default main-container saat sidebar terbuka */
+    top: 0; /* Posisi di bagian atas halaman */
+    z-index: 1; /* Pastikan header di atas elemen lain */
+    box-sizing: border-box; /* Untuk memastikan padding dihitung dalam lebar dan tinggi */
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* CSS untuk main-content */
+.main-content {
+    flex-grow: 1; /* Ambil sisa ruang yang tersedia */
+    padding: 15px;
+    background-color: rgb(255, 255, 255); /* Warna latar belakang main-content */
+    overflow-y: auto; /* Tambahkan scroll vertikal jika konten lebih tinggi dari viewport */
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Tambahkan transisi untuk lebar */
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.menu {
+    width: 25px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 5px;
+}
+
+.menu i {
+    font-size: 25px; /* Ukuran ikon */
+}
+
+/* CSS untuk container utama */
+.container-me {
+    display: flex;
+    transition: margin-left 0.3s ease; /* Transisi untuk konten utama saat sidebar berubah */
+}
+
+/* CSS untuk sidebar */
+.sidebar {
+    width: 220px; /* Lebar default saat terbuka */
+    background-color: #002855;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Tinggi sidebar mengikuti viewport */
+    overflow-y: auto; /* Tampilkan scroll vertikal pada sidebar jika diperlukan */
+    position: fixed; /* Mengatur sidebar agar tetap di tempat */
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease; /* Transisi untuk animasi */
+}
+
+/* CSS untuk scrollbar default - Webkit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+}
+
+/* CSS untuk track scrollbar */
+.sidebar::-webkit-scrollbar-track {
+    background: transparent; /* Latarnya transparan */
+}
+
+/* CSS untuk handle scrollbar */
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888; /* Warna handle scrollbar */
+    border-radius: 10px; /* Bulatkan handle scrollbar */
+}
+
+/* CSS untuk handle scrollbar saat hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Warna handle scrollbar saat hover */
+}
+
+.sidebar-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 30px; /* Menambahkan jarak bawah antara logo dan tulisan */
+    padding-top: 10%;
+    transition: width 0.3s ease; /* Transisi untuk ukuran logo saat collapsed */
+}
+
+.user-info {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* CSS untuk sidebar-menu dan item menu */
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Menambahkan lebar penuh untuk daftar */
+    transition: opacity 0.3s ease; /* Transisi untuk efek saat sidebar berubah */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    width: 100%; /* Menambahkan lebar penuh untuk item daftar */
+    position: relative; /* Tambahkan ini untuk mengatur submenu */
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Tambahkan CSS untuk submenu */
+.has-submenu .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu a {
+    font-size: 14px;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex; /* Menambahkan tampilan flex untuk link */
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Menambahkan transisi untuk efek hover dan aktif */
+}
+
+.sidebar-menu a i {
+    margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+}
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna abu-abu transparan saat dihover */
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:active {
+    background-color: #fff; /* Warna putih saat aktif */
+    color: #000; /* Teks hitam saat aktif */
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+/* CSS untuk button collapse */
+.collapse-button {
+    margin-top: auto;
+    margin-bottom: 15%;
+    padding: 10px;
+    background-color: #001D3D;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.collapse-button i {
+    transition: transform 0.3s ease;
+}
+
+/* CSS untuk sidebar ketika collapsed */
+.sidebar.collapsed {
+    width: 80px; /* Lebar sidebar ketika tertutup, hanya untuk ikon */
+    opacity: 0.9; /* Set opacity menjadi 0.9 saat collapsed */
+    overflow: hidden; /* Sembunyikan overflow saat collapsed */
+    white-space: nowrap; /* Mencegah teks meluas saat sidebar kecil */
+}
+
+.sidebar.collapsed ~ .main-container {
+    margin-left: 80px; /* Margin kiri untuk main-container saat sidebar collapsed */
+}
+
+.sidebar.collapsed ~ .main-content {
+    margin-left: 80px; /* Margin kiri untuk main-content saat sidebar collapsed */
+}
+
+.sidebar.collapsed + .header {
+    width: calc(100% - 80px); /* Lebar header dikurangi lebar sidebar saat collapsed */
+    margin-left: 80px; /* Margin kiri untuk header saat sidebar collapsed */
+}
+
+.sidebar.collapsed .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center ikon saat collapsed */
+    padding: 0; /* Hapus padding jika diperlukan */
+}
+
+.sidebar.collapsed .sidebar-logo {
+    width: 60px; /* Ukuran logo saat collapsed */
+    margin-bottom: 20px; /* Jarak bawah antara logo dan ikon */
+}
+
+.sidebar.collapsed .collapse-button i {
+    transform: rotate(180deg); /* Putar ikon collapse-button saat collapsed */
+}
+
+.sidebar.collapsed .user-info {
+    display: none; /* Sembunyikan teks user-info saat collapsed */
+}
+
+.sidebar.collapsed .sidebar-menu a {
+    display: flex; /* Menyusun ikon di tengah */
+    justify-content: center; /* Menyusun ikon di tengah */
+    padding: 10px;
+    width: 100%; /* Menyediakan ruang yang cukup untuk ikon */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    font-size: 0; /* Menghilangkan teks */
+}
+
+.sidebar.collapsed .sidebar-menu a i {
+    font-size: 20px; /* Ukuran ikon saat collapsed */
+    margin: 0; /* Hapus margin kanan ikon */
+}
+

@@ -1,0 +1,103 @@
+.content-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.content-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0D3B66;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.search-button, .add-button {
+    padding: 8px 12px;
+    background-color: #0D3B66;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.search-button i, .add-button i {
+    font-size: 16px;
+}
+
+.search-button:hover, .add-button:hover {
+    background-color: #094a92;
+}
+
+.table-vendor {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.table-vendor thead {
+    background-color: #0D3B66;
+    color: #FFFFFF;
+}
+
+.table-vendor th, .table-vendor td {
+    padding: 12px 15px;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+}
+
+.table-vendor tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+.table-vendor th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-vendor td {
+    text-align: center;
+}
+
+.table-vendor tbody tr:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+
+
+/* Status label styles */
+.status-label {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Colors for different statuses */
+.status-shipping {
+    background-color: #ffc107; /* Yellow for 'Proses Pengiriman' */
+}
+
+.status-approved {
+    background-color: #28a745; /* Green for 'Telah Disetujui' */
+}
+
+.status-finished {
+    background-color: #6c757d; /* Grey for 'Selesai' */
+}

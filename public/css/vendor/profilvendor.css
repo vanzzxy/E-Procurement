@@ -1,0 +1,56 @@
+.container-profil {
+    display: flex;
+    gap: 20px;
+}
+
+.profil-container, .kontak-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1; /* Memberi fleksibilitas untuk ukuran kolom */
+}
+
+.user-icon {
+    font-size: 4rem;
+    color: #002855;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profil-info, .kontak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profil-form, .kontak-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:read-only {
+    background-color: #f2f2f2;
+}
+
+label {
+    font-weight: bold;
+}

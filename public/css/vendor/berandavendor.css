@@ -1,0 +1,72 @@
+.card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card h2 {
+    margin: 10px 0 0;
+    font-size: 2.5em;
+}
+
+.card.yellow {
+    background-color: #FFC300;
+    color: #000;
+}
+
+.card.blue {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.card.black {
+    background-color: #000814;
+    color: #fff;
+}
+
+.chart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pieChart {
+    width: 300px;
+    height: 300px;
+}
+
+.collapsed + .main-content {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+}
+
+.legend-color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.dashboard .card {
+    margin-bottom: 0;
+    padding: 20px;
+}

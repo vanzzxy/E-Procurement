@@ -1,0 +1,39 @@
+/* Untuk membuat tombol "Daftar" dan "Masuk" memiliki latar belakang warna putih, tepi berwarna (stroke), dan teks berwarna hitam, Anda perlu memodifikasi CSS yang mengatur gaya tombol tersebut.
+
+Berikut adalah perubahan yang diperlukan dalam file CSS Anda:
+
+CSS (css/halamanlogin2.css)
+Tambahkan atau ubah gaya tombol di bagian CSS sebagai berikut:
+
+css
+Salin kode
+/* Pengaturan Tombol */
+.nav-buttons .btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #fff; /* Latar belakang putih */
+    border: 2px solid #000; /* Border hitam */
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000; /* Teks hitam */
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s; /* Animasi transisi */
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Latar belakang sedikit lebih gelap saat hover */
+    color: #000; /* Teks tetap hitam */
+    border-color: #000; /* Border tetap hitam */
+}
+
+.btn.white-btn {
+    background-color: #fff; /* Latar belakang putih */
+    color: #000; /* Teks hitam */
+    border: 2px solid #000; /* Border hitam */
+}
+
+.btn.white-btn:hover {
+    background-color: #f0f0f0; /* Latar belakang sedikit lebih gelap saat hover */
+    color: #000; /* Teks tetap hitam */
+    border-color: #000; /* Border tetap hitam */
+} */

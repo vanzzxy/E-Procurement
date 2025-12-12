@@ -1,0 +1,70 @@
+/* Import Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e6e9ef;
+}
+
+/* Batasi lebar container */
+.neu-container {
+    max-width: 900px;      /* Sebelumnya full-width → kini lebih ramping */
+    margin: 40px auto;     /* Agar selalu center */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Lebar section mengikuti container, tapi diberi padding lebih kecil */
+.neu-section {
+    padding: 30px;         /* Sesuaikan agar tidak terlalu besar */
+    border-radius: 20px;
+    line-height: 1.7;
+    transition: 0.3s ease;
+}
+
+
+/* DARK MODE (nya mirip sebelumnya) */
+.neu-section.dark {
+    background: #001d3d;
+    color: #fff;
+    box-shadow: 
+        10px 10px 20px #000e1e,
+        -10px -10px 20px #003060;
+}
+
+.neu-section.dark h2,
+.neu-section.dark h3 {
+    color: #ffcf33;
+}
+
+/* LIGHT MODE (neumorphism soft) */
+.neu-section.light {
+    background: #e6e9ef;
+    color: #000;
+    box-shadow: 
+        8px 8px 15px #babec5,
+        -8px -8px 15px #fff;
+}
+
+.neu-section.light h2,
+.neu-section.light h3 {
+    font-weight: 600;
+}
+
+/* Hover efek lembut */
+.neu-section:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .neu-container {
+        padding: 20px;
+    }
+
+    .neu-section {
+        padding: 25px;
+    }
+}

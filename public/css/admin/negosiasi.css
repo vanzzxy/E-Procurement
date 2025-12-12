@@ -1,0 +1,56 @@
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table .btn {
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.table .btn-primary {
+    background-color: #001D3D;
+    border-color: #aad0f8;
+    color: #fff;
+}
+
+.table .btn-warning {
+    background-color: #ffc107;
+    border-color: #eed68f;
+    color: #000000;
+}
+
+.table .fa {
+    font-size: 1.5em; /* Ukuran font ikon yang seragam */
+    color: #fff;
+}
+
+.thead-custom {
+    background-color: #003566; /* Warna latar belakang thead */
+    color: #fff; /* Warna teks thead */
+}
+
+.pagination {
+    justify-content: flex-end; /* Menyesuaikan posisi paginasi */
+}
+
+.page-link {
+    color: #007bff;
+}
+
+.page-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+}

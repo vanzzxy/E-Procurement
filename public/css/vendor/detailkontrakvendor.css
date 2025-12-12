@@ -1,0 +1,129 @@
+.content-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.table-vendor {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.table-vendor thead {
+    background-color: #0D3B66;
+    color: #FFFFFF;
+}
+
+.table-vendor th, .table-vendor td {
+    padding: 12px 15px;
+    border: 1px solid #CCCCCC;
+}
+
+.table-vendor tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+.table-vendor th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-vendor td {
+    text-align: center;
+}
+
+.table-vendor tbody tr:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+
+/* Modal Dialog styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px; 
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Mengatur elemen agar tersebar, tombol tutup ke kanan */
+    align-items: center;
+    margin-bottom: 10px; /* Memberikan jarak antara header dan konten form */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Penambahan shadow */
+}
+
+.close {
+    color: #444; /* Warna tombol tutup */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Warna saat di-hover */
+    text-decoration: none;
+}
+/* Form styles inside modal */
+.modal form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal form input,
+.modal form select,
+.modal form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Tambahkan transisi pada border */
+}
+
+.modal form input:focus,
+.modal form select:focus {
+    border-color: #003566; /* Ubah warna border saat focus */
+}
+
+.modal form button {
+    background-color: #003566;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Tambahkan transisi pada background */
+}
+
+.modal form button:hover {
+    background-color: #002244; /* Warna lebih gelap saat hover */
+}
+
+/* Tambahan untuk responsif */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px; /* Sedikit kurangi padding untuk layar kecil */
+        max-width: 95%; /* Kurangi maksimal lebar */
+    }
+}

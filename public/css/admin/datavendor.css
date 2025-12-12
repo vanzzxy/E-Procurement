@@ -1,0 +1,135 @@
+/* Tambahkan gaya CSS di sini */
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    margin-right: 10px;
+}
+
+.btn-primary-custom {
+    background-color: #ffbf00;
+    color: black;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e6ac00;
+}
+
+.btn-dark {
+    background-color: #052049;
+    color: white;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #041737;
+}
+
+.table-custom thead {
+    background-color: #052049;
+    color: white;
+}
+
+.table-custom tbody tr:nth-child(odd) {
+    background-color: #fffbec;
+}
+
+.table-custom tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-custom th, .table-custom td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.fa-check-circle {
+    color: #6ccf70;
+}
+
+.fa-times-circle {
+    color: #eb4f4f;
+}
+
+.fa-eye {
+    color: #1c7cd6;
+}
+
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-icons i {
+    cursor: pointer;
+}
+
+.pagination {
+    float: right;
+}
+
+.page-link {
+    color: #052049;
+}
+
+.page-link:hover {
+    color: #041737;
+}
+
+.filter-btn-group {
+    display: flex;
+}
+
+.filter-btn-group .btn {
+    margin-right: 10px;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.input-group {
+    width: 300px;
+    margin-right: 15px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+thead th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Gaya untuk checkbox yang diubah warnanya */
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6ccf70;
+    border-color: #6ccf70;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Unicode karakter centang */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}

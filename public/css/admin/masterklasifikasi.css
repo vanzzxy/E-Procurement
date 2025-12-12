@@ -1,0 +1,98 @@
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#klasifikasiTable thead th {
+    background-color: #003566;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+#klasifikasiTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#klasifikasiTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#klasifikasiTable tbody tr:nth-child(even) {
+    background-color: #e8edf3;
+}
+
+#klasifikasiTable tbody tr:hover {
+    background-color: #f1f7ff;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background-color: #022047;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #001d3d;
+}
+
+.btn-sm.text-dark i {
+    color: #001d3d;
+    transition: 0.2s;
+}
+
+.btn-sm.text-dark:hover i {
+    color: #0056b3;
+}
+
+.btn-sm.text-danger i {
+    color: #dc3545;
+}
+
+.btn-sm.text-danger:hover i {
+    color: #a71d2a;
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #003566;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-footer .btn-dark {
+    background-color: #001d3d;
+    border: none;
+}
+
+.modal-footer .btn-dark:hover {
+    background-color: #00142a;
+}
+
+.main-content h1 {
+    color: #001d3d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    background-color: #003566;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}

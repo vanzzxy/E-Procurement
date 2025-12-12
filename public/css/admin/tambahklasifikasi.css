@@ -1,0 +1,49 @@
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    position: relative;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+h2 {
+    font-weight: bold;
+    color: #002855;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #002855;
+    border: none;
+    width: 100px;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

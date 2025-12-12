@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk main-container */
+.main-container {
+    margin-left: 220px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* CSS untuk container utama */
+.container-me {
+    display: flex;
+    transition: margin-left 0.3s ease; /* Transisi untuk konten utama saat sidebar berubah */
+}
+
+/* CSS untuk header */
+.header {
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* CSS untuk main-content */
+.main-content {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.menu {
+    width: 25px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 5px;
+}
+
+.menu i {
+    font-size: 25px;
+}
+
+/* CSS untuk sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #002855;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+}
+
+.sidebar:hover {
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-header {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+    padding-top: 10%;
+    transition: width 0.3s ease;
+}
+
+.user-info {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.sidebar-menu a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.collapse-button {
+    margin-top: auto;
+    margin-bottom: 15%;
+    padding: 10px;
+    background-color: #001D3D;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.collapse-button i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+    opacity: 0.9;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar.collapsed:hover {
+    overflow-y: auto;
+}
+
+.sidebar.collapsed ~ .main-container {
+    margin-left: 80px;
+}
+
+.sidebar.collapsed ~ .main-content {
+    margin-left: 80px;
+}
+
+.sidebar.collapsed + .header {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+}
+
+.sidebar.collapsed .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.sidebar.collapsed .sidebar-logo {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.sidebar.collapsed .collapse-button i {
+    transform: rotate(180deg);
+}
+
+.sidebar.collapsed .user-info {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu a {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
+.sidebar.collapsed .sidebar-menu a i {
+    font-size: 20px;
+    margin: 0;
+}

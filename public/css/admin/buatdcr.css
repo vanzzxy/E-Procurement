@@ -1,0 +1,44 @@
+.container {
+    max-width: 500px; /* Membatasi lebar form */
+    margin-top: 100px; /* Memberikan jarak dari atas */
+}
+
+.text-center {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-control {
+    height: 45px; /* Tinggi input form */
+    font-size: 16px; /* Ukuran font dalam input */
+    padding: 10px;
+}
+
+.btn-dark {
+    background-color: #003366;
+    border-color: #003366;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.btn-dark:hover {
+    background-color: #002244;
+    border-color: #002244;
+}

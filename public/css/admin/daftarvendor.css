@@ -1,0 +1,88 @@
+/* ===============================
+   TABEL DAFTAR VENDOR
+   =============================== */
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header tabel */
+#vendorTable thead th {
+    background-color: #003566;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+/* Isi tabel */
+#vendorTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Baris bergantian */
+#vendorTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#vendorTable tbody tr:nth-child(even) {
+    background-color: #e8edf3;
+}
+
+/* Hover */
+#vendorTable tbody tr:hover {
+    background-color: #f1f7ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Tombol lihat (action) */
+.btn-sm.text-dark i {
+    color: #001d3d;
+    transition: 0.2s;
+}
+
+.btn-sm.text-dark:hover i {
+    color: #0056b3;
+}
+
+/* Judul halaman */
+.main-content h1 {
+    color: #001d3d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Garis bawah judul */
+.underline {
+    width: 100px;
+    height: 4px;
+    background-color: #003566;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+/* SweetAlert Theme */
+.swal2-popup {
+    border-radius: 10px !important;
+    font-family: "Poppins", sans-serif;
+}
+
+.swal2-title {
+    color: #001d3d !important;
+}
+
+.swal2-confirm {
+    background-color: #003566 !important;
+    border: none !important;
+    border-radius: 6px !important;
+}
+
+.swal2-cancel {
+    background-color: #6c757d !important;
+    border: none !important;
+    border-radius: 6px !important;
+}

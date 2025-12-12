@@ -1,0 +1,42 @@
+.container-responsive {
+    max-width: 100%;
+}
+
+.card {
+    width: auto;
+    padding: 1.5rem;
+    margin: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+h4 {
+    color: #1a1a1a;
+}
+
+.btn-primary {
+    background-color: #001f3f;
+    border-color: #001f3f;
+    margin-top: 40px;
+}
+
+.btn-primary:hover {
+    background-color: #001a35;
+    border-color: #001a35;
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-right {
+        text-align: center;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}

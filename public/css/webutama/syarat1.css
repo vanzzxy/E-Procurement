@@ -1,0 +1,46 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.banner {
+    background-color: #ffcf33;
+    height: 300px;
+}
+
+.content {
+    flex: 1;
+    margin: 20px 50px;
+    background: #001D3D;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.content h2, .content h3 {
+    color: #ffcf33;
+}
+
+/* CSS untuk bagian .content.a */
+
+.content.a {
+    padding: 20px;
+    background-color: white; /* Warna latar belakang putih */
+    border: 1px solid #003366; /* Border warna biru */
+    border-radius: 8px; /* Opsional untuk sudut yang halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional untuk bayangan */
+    margin-top: 20px;
+}
+
+.content.a h2, .content.a h3 {
+    font-weight: bold; /* Tulisan h2 dan h3 bold */
+    color: black; /* Tulisan berwarna hitam */
+    margin-bottom: 20px; /* Opsional untuk jarak antar elemen */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content.a p {
+    color: black; /* Tulisan berwarna hitam */
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+    margin-left: 10px;
+    margin-right: 10px;
+}

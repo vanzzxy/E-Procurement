@@ -1,0 +1,196 @@
+/* Section title styles */
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #4a4e51;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Posisikan search bar dan tombol di sebelah kanan */
+    margin-bottom: 10px; /* Memberikan jarak antara search bar dengan tabel */
+}
+
+.search-input {
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+/* Table container and table styles */
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003566;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button action styles */
+.btn-action {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    color: rgb(8, 8, 8);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.btn-action i {
+    font-size: 15px;
+}
+
+.btn-action.edit { background-color: #ffc107; border: 1px solid #ffc107; }
+.btn-action.view { background-color: #ffc107; border: 1px solid #ffc107; }
+.btn-action.truck { background-color: #ffc107; border: 1px solid #ffc107; }
+
+.btn-action.edit:hover { background-color: #b09647; border-color: #e0a800; }
+.btn-action.view:hover { background-color: #b09647; border-color: #e0a800; }
+.btn-action.truck:hover { background-color: #b09647; border-color: #e0a800; }
+
+/* Status label styles */
+.status-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.status-approved { background-color: #28a745; }
+.status-shipping { background-color: #ffc107; }
+.status-finished {
+    background-color: #007bff; /* Latar belakang biru */
+    color: white; /* Tulisan putih */
+}
+
+
+/* Modal Dialog styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px; 
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Mengatur elemen agar tersebar, tombol tutup ke kanan */
+    align-items: center;
+    margin-bottom: 10px; /* Memberikan jarak antara header dan konten form */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Penambahan shadow */
+}
+
+.close {
+    color: #444; /* Warna tombol tutup */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Warna saat di-hover */
+    text-decoration: none;
+}
+/* Form styles inside modal */
+.modal form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal form input,
+.modal form select,
+.modal form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Tambahkan transisi pada border */
+}
+
+.modal form input:focus,
+.modal form select:focus {
+    border-color: #003566; /* Ubah warna border saat focus */
+}
+
+.modal form button {
+    background-color: #003566;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Tambahkan transisi pada background */
+}
+
+.modal form button:hover {
+    background-color: #002244; /* Warna lebih gelap saat hover */
+}
+
+/* Tambahan untuk responsif */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px; /* Sedikit kurangi padding untuk layar kecil */
+        max-width: 95%; /* Kurangi maksimal lebar */
+    }
+}

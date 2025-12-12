@@ -1,0 +1,52 @@
+.card {
+    margin-top: 20px;
+    border: none; /* Menghilangkan border card */
+    width: 100%;
+}
+
+.card-header {
+    color: #002855;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.card-title {
+    margin-bottom: 0; /* Menghilangkan margin bawah */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.table {
+    margin-bottom: 0; /* Menghilangkan margin bawah tabel */
+}
+
+/* CSS untuk thead-custom */
+.thead-custom {
+    background-color: #003566; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    color: white; /* Ganti dengan warna teks yang Anda inginkan */
+}
+
+
+
+.table th, .table td {
+    vertical-align: middle; /* Menyelaraskan teks secara vertikal */
+    padding: 10px; /* Menambahkan padding pada sel tabel */
+}
+
+/* Mengatur ukuran form dan tabel menjadi sama panjang */
+.card-body {
+    padding: 0; /* Menghilangkan padding pada card-body */
+    width: 100%;
+}
+
+.form-row,
+.table {
+    width: 100%; /* Membuat form dan tabel menggunakan lebar penuh container */
+}

@@ -1,0 +1,100 @@
+
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Posisikan search bar dan tombol di sebelah kanan */
+    margin-bottom: 10px; /* Memberikan jarak antara search bar dengan tabel */
+}
+
+.search-input {
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+table {
+    width: calc(100%); /* Mengurangi padding untuk memastikan tabel dan pagination sejajar */
+    border-collapse: collapse;
+    margin-bottom: 40px; /* Memberikan ruang untuk pagination */
+}
+
+thead {
+    background-color: #002855;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Gaya dasar untuk tombol aksi */
+.action-btn {
+    background-color: #002855; /* Warna latar belakang tombol */
+    border: none; /* Menghapus border default tombol */
+    color: white; /* Warna teks pada tombol */
+    padding: 5px 15px; /* Padding di sekitar teks */
+    text-align: center; /* Penjajaran teks di tengah */
+    /* text-decoration: none; Menghapus dekorasi teks default */
+    display: inline-block; /* Menampilkan tombol secara inline */
+    /* font-size: 14px; Ukuran font tombol */
+    /* margin: 2px 1px; Margin di sekitar tombol */
+    cursor: pointer; /* Mengubah cursor saat melayang di atas tombol */
+    border-radius: 4px; /* Membuat sudut tombol melengkung */
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya untuk ikon di dalam tombol */
+/* .action-btn .fas {
+    margin-right: 5px; /* Memberikan ruang di sebelah kanan ikon */
+/* }
+
+/* Gaya saat tombol aksi dalam keadaan di-hover */
+.action-btn:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat di-hover */
+}
+
+/* Gaya saat tombol aksi dalam keadaan ditekan */
+.action-btn:active {
+    background-color: #004085; /* Warna latar belakang tombol saat ditekan */
+    box-shadow: 0 5px #666; /* Efek bayangan saat tombol ditekan */
+    transform: translateY(4px); /* Efek transisi saat tombol ditekan */
+}
+
+/* .pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #002855;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; Membuat sudut tombol melengkung
+}
+.pagination button:hover {
+    background-color: #0056b3;
+} */

@@ -1,0 +1,198 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Styling for Banner */
+.banner {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    min-height: 200px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styling for Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+/* Styling for About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #001D3D; /* Warna latar belakang biru tua */
+    position: relative; /* Diperlukan untuk posisi elemen pseudo */
+    border-radius: 8px; /* Opsional untuk sudut yang halus */
+    min-height: 300px; /* Mengatur tinggi minimal agar tidak mengecil */
+    overflow: hidden; /* Agar elemen pseudo tidak keluar dari border-radius */
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Menempel di sisi kiri */
+    bottom: 3%; /* Menempel di sisi bawah */
+    width: 15%; /* Sesuaikan lebar ini sesuai desain Anda */
+    height: 15%; /* Sesuaikan tinggi ini sesuai desain Anda */
+    background-color: #FFC107; /* Warna aksen kuning */
+    border-top-left-radius: 0px; /* Sesuaikan dengan border-radius section */
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 52px;
+    border-bottom-right-radius: 52px;
+}
+
+.about-section .text {
+    flex: 1;
+    color: white;
+    padding-left: 6%; /* Sesuaikan padding sesuai keinginan Anda */
+    margin-top: 0%;
+}
+
+.about-section .text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-left: 20%; /* Sesuaikan padding sesuai keinginan Anda */
+    color: #FFC107; /* Warna teks kuning untuk kontras */
+}
+
+.about-section .text p {
+    font-size: 14px;
+    padding-left: 20%; /* Sesuaikan padding sesuai keinginan Anda */
+    line-height: 1.6;
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 80%;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for Info and FAQ Sections */
+.header-section {
+    background-color: #FFC107;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0px 0px;
+    border-radius: 0 52px 0 52px;
+    width: 500px;
+    height: 50%;
+    margin-left: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    font-size: 24px;
+    color: #001D3D;
+    margin: 0;
+}
+
+.info-section, .faq-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 10px 15% 30px 15%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.faq-section details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.faq-section summary {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faq-section p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Styling for Footer */
+.footer {
+    background-color: #001D3D;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1 1 25%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #FFC107;
+}

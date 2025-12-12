@@ -1,0 +1,25 @@
+/* Tambahkan pada file tambahbarang.css atau sesuaikan dengan file yang sudah ada */
+.h2 {
+    color: #003566;
+}
+
+.form-group label {
+    color: #003566;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    background-color: #003566;
+    border-color: #003566;
+}
+
+/* Style untuk dropdown bisa disearch */
+.select2-container--default .select2-selection--single {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    height: 38px;
+}

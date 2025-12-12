@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #002855;
+    color: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    height: 100%; /* Sesuaikan tinggi sidebar dengan viewport */
+    position: fixed; /* Sidebar tetap di tempat */
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 50px; /* Menambahkan jarak bawah antara logo dan tulisan */
+    padding-top: 10%;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Menambahkan lebar penuh untuk daftar */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    width: 100%; /* Menambahkan lebar penuh untuk item daftar */
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex; /* Menambahkan tampilan flex untuk link */
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Menambahkan transisi untuk efek hover dan aktif */
+}
+
+.sidebar-menu a i {
+    margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna abu-abu transparan saat dihover */
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.sidebar-menu a.active,
+.sidebar-menu a:active {
+    background-color: #fff; /* Warna putih saat aktif */
+    color: #000; /* Teks hitam saat aktif */
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.collapse-button {
+    margin-top: auto;
+    margin-bottom: 15%;
+    padding: 10px;
+    background-color: #001D3D;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.collapse-button i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-logo,
+.sidebar.collapsed .user-info,
+.sidebar.collapsed .sidebar-menu,
+.sidebar.collapsed .collapse-button {
+    display: none;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 25px; /* Ukuran ikon */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Tambahkan margin kiri agar konten tidak tertutup oleh sidebar */
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:nth-child(2) {
+    background-color: #fff3cd;
+}
+
+.card-icon {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-content h4 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.card-content p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: 60%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #001D3D;
+    
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#card-actions-button:hover {
+    background-color: #5f7389;
+}
+
+/* .btn.secondary {
+    background-color: #FFC300;
+    color: #000;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.dialog {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.drop-zone input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.drop-zone .fas {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.browse-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.secondary {
+    background: #FFC300;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.btn.primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn.secondary:hover {
+    background: #6d6969;
+}
+
+.btn.primary:hover {
+    background: #031528;
+}

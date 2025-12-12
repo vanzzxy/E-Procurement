@@ -1,0 +1,57 @@
+/* ===== STYLE TABLE MIRIP MASTER BARANG ===== */
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+#rekananTable thead th {
+    background-color: #003566; /* Biru tua */
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+/* Body */
+#rekananTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Row bergantian */
+#rekananTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+#rekananTable tbody tr:nth-child(even) {
+    background-color: #e8edf3;
+}
+
+/* Hover */
+#rekananTable tbody tr:hover {
+    background-color: #f1f7ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Tombol Action */
+.table .fa {
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.table .fa.fa-eye {
+    color: #003566;
+}
+.table .fa.fa-eye:hover {
+    color: #0056b3;
+}
+
+.table .fa.fa-upload {
+    color: green;
+}
+.table .fa.fa-upload:hover {
+    color: #0d7a0d;
+}

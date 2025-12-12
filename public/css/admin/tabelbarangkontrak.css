@@ -1,0 +1,141 @@
+/* Mengatur warna dan gaya pada tabel */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa; /* Warna latar belakang saat baris di-hover */
+}
+
+.thead {
+    background-color: #0b3e6f !important; /* Warna biru tua */
+    color: white !important; /* Warna teks putih */
+    text-align: center;
+}
+
+.table-hover tbody tr td {
+    vertical-align: middle; /* Vertikal tengah untuk semua kolom */
+    text-align: center;
+}
+
+/* Mengatur tampilan tombol */
+.btn-warning {
+    background-color: #ffc107; /* Warna kuning untuk tombol upload */
+    border-color: #ffc107; /* Warna border tombol upload */
+    color: black; /* Warna teks tombol */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Warna kuning gelap saat di-hover */
+    border-color: #d39e00; /* Warna border saat di-hover */
+}
+
+.btn-primary {
+    background-color: #003366; /* Warna biru gelap untuk tombol simpan */
+    border-color: #003366; /* Warna border tombol simpan */
+}
+
+.btn-primary:hover {
+    background-color: #002244; /* Warna biru lebih gelap saat di-hover */
+    border-color: #002244; /* Warna border saat di-hover */
+}
+
+/* Mengatur ukuran dan jarak tombol */
+.btn {
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font tombol */
+}
+
+/* Mengatur tampilan input pencarian */
+input[type="text"].form-control {
+    border-radius: 0.25rem; /* Border radius untuk input pencarian */
+    border: 1px solid #ced4da; /* Warna border input */
+    padding: 10px; /* Padding input */
+    font-size: 16px; /* Ukuran font input */
+}
+
+/* Mengatur tampilan modal */
+/* CSS untuk Modal */
+.custom-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay lebih gelap */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1060; /* Z-index untuk konten modal */
+}
+
+.custom-modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1060; /* Z-index untuk tombol close */
+}
+
+
+.custom-modal .close:hover,
+.custom-modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tambahkan z-index lebih rendah untuk elemen lain jika diperlukan */
+body.modal-open {
+    overflow: hidden; /* Mencegah scroll ketika modal terbuka */
+}
+
+/* Mengatur tampilan drop zone */
+.drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    color: #02264d;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.drop-zone .browse-btn {
+    background-color: #02264d;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+
+.drop-zone .browse-btn:hover {
+    background-color: #02264d;
+}
+
+/* Mengatur tampilan form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-actions .btn {
+    margin-left: 10px;
+}
+
+.dragover {
+    background-color: #e0e0e0; /* Warna latar saat file di-drag ke atas drop zone */
+}

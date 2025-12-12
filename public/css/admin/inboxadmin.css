@@ -1,0 +1,42 @@
+.card-header {
+    
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+}
+
+/* css/admin/databarang.css */
+thead {
+    background-color: #001D3D; /* Warna ungu */
+    color: white; /* Warna teks putih */
+}
+
+
+/* css/admin/inboxadmin.css */
+.btn-info {
+    background-color: #FFC300; /* Warna ungu */
+    border-color: #f4a135; /* Warna border ungu */
+}
+
+.btn-info .fas.fa-eye {
+    color: rgb(0, 0, 0); /* Warna ikon mata putih */
+}
+
+
+.btn-info:hover {
+    background-color: #8C6B00; /* Warna ungu gelap saat hover */
+    border-color: #ffffff; /* Warna border ungu gelap saat hover */
+}
+
+.btn-info:hover .fas.fa-eye {
+    color: #ffffff; /* Warna ikon mata tetap putih saat hover */
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -250px;
+    }
+}
